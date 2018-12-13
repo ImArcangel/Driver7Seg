@@ -1,0 +1,44 @@
+/*
+Asignacion de los primeros 4 slide switches 
+que encienden/apagan los cuatro visualizadores 
+respectivamente
+*/
+
+NET "anodos_i<0>"  LOC = "J14"  ; 
+NET "anodos_i<1>"  LOC = "J13"  ;
+NET "anodos_i<2>"  LOC = "K14"  ;
+NET "anodos_i<3>"  LOC = "K13"  ;
+
+
+/*
+Asignacion de los siguientes 4 slide switches que
+determian el numero a mostrar en los visualizadores
+*/
+
+NET "number_i<0>"  LOC = "F12"  ; 
+NET "number_i<1>"  LOC = "G12"  ; 
+NET "number_i<2>"  LOC = "H14"  ; 
+NET "number_i<3>"  LOC = "H13"  ; 
+
+
+//Asingacion de cada segmento del visualizador
+
+NET "segmentos_o<7>"  LOC = "E14"  ;// Segmento A
+NET "segmentos_o<6>"  LOC = "G13"  ;// Segmento B
+NET "segmentos_o<5>"  LOC = "N15"  ;// Segmento C
+NET "segmentos_o<4>"  LOC = "P15"  ;// Segmento D
+NET "segmentos_o<3>"  LOC = "R16"  ;// Segmento E
+NET "segmentos_o<2>"  LOC = "F13"  ;// Segmento F
+NET "segmentos_o<1>"  LOC = "N16"  ;// Segmento G
+NET "segmentos_o<0>"  LOC = "P16"  ;// Segmento DP
+
+
+/*
+Asignacion de cada slide switch a su visualizador 
+correspondiente
+*/
+
+NET "anodos_o<0>"  LOC = "D14"  ; 
+NET "anodos_o<1>"  LOC = "G14"  ;
+NET "anodos_o<2>"  LOC = "F14"  ;
+NET "anodos_o<3>"  LOC = "E13"  ;
